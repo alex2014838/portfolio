@@ -1,0 +1,59 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - My Portfolio</title>
+    <link rel="stylesheet" href="{% static 'home.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <h2>Hi, I'm Surya, a Python Developer.</h2>
+    </header>
+
+    <section class="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Python</li>
+            <li>Django</li>
+            <li>HTML, CSS, JavaScript</li>
+            <li>SQL</li>
+            <li>Git</li>
+        </ul>
+    </section>
+
+    <section class="projects">
+        <h2>My Projects</h2>
+        <div class="project">
+            <h3>Project Title 1</h3>
+            <p>A brief description of this project. This could be a web app or a tool that you developed.</p>
+            <a href="https://github.com/alex2014838/websiteclone">GitHub Repo</a> | 
+            <a href="https://website-three-eta-50.vercel.app">Live Demo</a>
+        </div>
+        <div class="project">
+            <h3>Project Title 2</h3>
+            <p>Another project description. Explain the project, the tools you used, and its functionality.</p>
+            <a href="https://github.com/yourusername/project2">GitHub Repo</a> | 
+            <a href="https://example.com">Live Demo</a>
+        </div>
+        <div class="project">
+            <h3>Project Title 3</h3>
+            <p>A short description of your third project. Showcase the technologies you've used here.</p>
+            <a href="https://github.com/yourusername/project3">GitHub Repo</a> | 
+            <a href="http://example.com">Live Demo</a>
+        </div>
+    </section>
+
+    <section class="contact-link">
+        <h2>Get in Touch</h2>
+        <p>If you want to reach out to me, feel free to <a href="{% url 'contact' %}" class="btn">Contact Me</a>!</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 My Portfolio</p>
+    </footer>
+</body>
+</html>

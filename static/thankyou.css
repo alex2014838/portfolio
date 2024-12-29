@@ -1,0 +1,103 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7fc;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Thank You Page Container */
+.thank-you-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+/* Header Section */
+header {
+    background-color: lightpink;
+    color: purple;
+    width: 100%;
+    padding: 60px 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 48px;
+    font-weight: 600;
+}
+
+/* Thank You Message */
+.thank-you-message {
+    background-color: lightgoldenrodyellow;
+    padding: 40px 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 20px;
+    font-size: 40px;
+    color: black;
+    line-height: 1.5;
+}
+
+.thank-you-message p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.thank-you-message .btn {
+    background-color: purple;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.thank-you-message .btn:hover {
+    background-color: #2980b9;
+    transform: translateY(-5px);
+}
+
+/* Footer Section */
+footer {
+    background-color: #2C3E50;
+    color: #ECF0F1;
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .thank-you-message {
+        width: 90%;
+        padding: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .thank-you-message {
+        width: 100%;
+        padding: 20px;
+    }
+}
